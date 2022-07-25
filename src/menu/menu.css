@@ -1,0 +1,125 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header .logo svg{
+    fill:#ed4d4a;
+}
+.header .logout{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card .card-header{
+    background: #F04E4A;    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card .card-header h2{
+    padding: 12px 3px 8px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: left;
+    
+}
+.card button{
+    padding: 0;
+}
+.btn-link:hover{
+    text-decoration: none;
+}
+.card .card-header h2 button{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card .card-body .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.card .card-body .container h3.name{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.card .card-body .container h5.description{
+    color: #47465d;
+    font-size: 15px;
+    line-height: 15px;
+}
+.card .card-body .container h4.precie{
+    color: #F04E4A;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.center{
+    position: relative;
+    transform: translate(0%, 50%);
+}
+.card .card-body .container h3.name.disponibilidad{
+    font-size: 20px;
+}
+.card-body{
+    background: rgba(237, 77, 74, 0.15);
+}
+
+.element{
+    border-bottom: 1px solid #ed4d4a  ;
+}
+
+
+@media (max-width: 576px) {
+    .center{
+        position: relative;
+        transform: translate(0%, 50%);
+    }
+}
+
+input[type="checkbox"]{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    -webkit-appearance: none; 
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    transition: .5s;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:checked[type="checkbox"]{
+    background: #F04E4A;
+}
+input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top:0;
+    left:0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: -2px 9px 47px rgb(0 0 0 / 20%);
+    transition: .5s;
+    border: 3px solid #ed4d4a;
+}
+input:checked[type="checkbox"]:before{
+    left: 40px;
+}
